@@ -1,0 +1,40 @@
+{
+  "name": "@starter/api",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.3.0",
+    "@nestjs/core": "^10.3.0",
+    "@nestjs/platform-express": "^10.3.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "cors": "^2.8.5",
+    "ai": "^3.2.19",
+    "@ai-sdk/openai": "^0.0.34",
+    "@ai-sdk/anthropic": "^0.0.30",
+    "@ai-sdk/google": "^0.0.24",
+    "zod": "^3.23.8",
+    "jsonschema": "^1.4.1",
+    "@opentelemetry/api": "^1.9.0",
+    "pino": "^9.0.0",
+    "pino-http": "^10.0.0",
+    "dotenv": "^16.4.5",
+    "prisma": "^5.19.0",
+    "@prisma/client": "^5.19.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.5",
+    "@nestjs/schematics": "^10.1.1",
+    "@nestjs/testing": "^10.3.0",
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.11.30"
+  }
+}
