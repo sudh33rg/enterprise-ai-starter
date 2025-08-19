@@ -1,0 +1,1 @@
+"use strict";class a{constructor(e={}){e.defaultLocale&&this.setDefaultLocale(e.defaultLocale)}isAfter(e,t){return this.compare(e,t)>0}isBefore(e,t){return this.compare(e,t)<0}}exports.UxaDateTimeAdapter=a;

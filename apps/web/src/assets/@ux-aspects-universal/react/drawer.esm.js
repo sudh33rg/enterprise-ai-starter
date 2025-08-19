@@ -1,0 +1,15 @@
+export { DrawerAnimation } from '@ux-aspects-universal/core/drawer';
+export { D as Drawer, a as DrawerContainer, b as DrawerResizeHandle, u as useDrawer } from './drawer-container.esm.js';
+import 'prop-types';
+import 'react';
+import './zoom-out.esm.js';
+import './prop-types.esm.js';
+import './_tslib.esm.js';
+import './direction.esm.js';
+import '@react-aria/utils';
+import 'clsx';
+import './use-mutation-observer.esm.js';
+import './reducer-provider.esm.js';
+import './use-unique-id.esm.js';
+import './style-inject.es.esm.js';
+import './use-isomorphic-effect.esm.js';

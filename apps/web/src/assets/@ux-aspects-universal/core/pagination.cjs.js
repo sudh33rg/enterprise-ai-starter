@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});function s(n,f,l){const o=[];if(f<=l){for(let e=1;e<=f;e++)o.push(e);return o}let r=n-Math.floor(l/2),t=n+Math.floor(l/2);r<1&&(t=t+(1-r),r=1),t>f&&(r=r-(t-f),t=f);for(let e=r;e<=t;e++)o.push(e);return o}exports.getPageRange=s;

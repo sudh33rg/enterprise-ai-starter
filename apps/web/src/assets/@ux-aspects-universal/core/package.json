@@ -1,0 +1,80 @@
+{
+  "name": "@ux-aspects-universal/core",
+  "version": "8.2.0",
+  "license": "UNLICENSED",
+  "types": "./src/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    "./common": {
+      "types": "./common/src/index.d.ts",
+      "import": "./common.es.js",
+      "require": "./common.cjs.js",
+      "default": "./common.es.js"
+    },
+    "./date-time": {
+      "types": "./date-time/src/index.d.ts",
+      "import": "./date-time.es.js",
+      "require": "./date-time.cjs.js",
+      "default": "./date-time.es.js"
+    },
+    "./date-time-luxon": {
+      "types": "./date-time-luxon/src/index.d.ts",
+      "import": "./date-time-luxon.es.js",
+      "require": "./date-time-luxon.cjs.js",
+      "default": "./date-time-luxon.es.js"
+    },
+    "./date-time-moment": {
+      "types": "./date-time-moment/src/index.d.ts",
+      "import": "./date-time-moment.es.js",
+      "require": "./date-time-moment.cjs.js",
+      "default": "./date-time-moment.es.js"
+    },
+    "./dialog": {
+      "types": "./dialog/src/index.d.ts",
+      "import": "./dialog.es.js",
+      "require": "./dialog.cjs.js",
+      "default": "./dialog.es.js"
+    },
+    "./drawer": {
+      "types": "./drawer/src/index.d.ts",
+      "import": "./drawer.es.js",
+      "require": "./drawer.cjs.js",
+      "default": "./drawer.es.js"
+    },
+    "./i18n": {
+      "types": "./i18n/src/index.d.ts",
+      "import": "./i18n.es.js",
+      "require": "./i18n.cjs.js",
+      "default": "./i18n.es.js"
+    },
+    "./notification": {
+      "types": "./notification/src/index.d.ts",
+      "import": "./notification.es.js",
+      "require": "./notification.cjs.js",
+      "default": "./notification.es.js"
+    },
+    "./pagination": {
+      "types": "./pagination/src/index.d.ts",
+      "import": "./pagination.es.js",
+      "require": "./pagination.cjs.js",
+      "default": "./pagination.es.js"
+    },
+    "./popover": {
+      "types": "./popover/src/index.d.ts",
+      "import": "./popover.es.js",
+      "require": "./popover.cjs.js",
+      "default": "./popover.es.js"
+    },
+    "./theming": {
+      "types": "./theming/src/index.d.ts",
+      "import": "./theming.es.js",
+      "require": "./theming.cjs.js",
+      "default": "./theming.es.js"
+    }
+  },
+  "optionalDependencies": {
+    "@types/luxon": ">=1.0.0 <4.0.0",
+    "luxon": ">=1.0.0 <4.0.0",
+    "moment": "^2.0.0"
+  }
+}

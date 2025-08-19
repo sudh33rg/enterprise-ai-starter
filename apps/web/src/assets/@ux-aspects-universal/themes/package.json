@@ -1,0 +1,77 @@
+{
+  "name": "@ux-aspects-universal/themes",
+  "version": "8.2.0",
+  "dependencies": {},
+  "exports": {
+    "./micro-focus": {
+      "module": "./micro-focus/index.esm.js",
+      "default": "./micro-focus/index.cjs.js",
+      "import": "./micro-focus/index.cjs.js",
+      "types": "./micro-focus/index.d.ts",
+      "style": "./micro-focus/index.css"
+    },
+    "./micro-focus/index.css": {
+      "style": "./micro-focus/index.css"
+    },
+    "./micro-focus-dark": {
+      "module": "./micro-focus-dark/index.esm.js",
+      "default": "./micro-focus-dark/index.cjs.js",
+      "import": "./micro-focus-dark/index.cjs.js",
+      "types": "./micro-focus-dark/index.d.ts",
+      "style": "./micro-focus-dark/index.css"
+    },
+    "./micro-focus-dark/index.css": {
+      "style": "./micro-focus-dark/index.css"
+    },
+    "./white-label": {
+      "module": "./white-label/index.esm.js",
+      "default": "./white-label/index.cjs.js",
+      "import": "./white-label/index.cjs.js",
+      "types": "./white-label/index.d.ts",
+      "style": "./white-label/index.css"
+    },
+    "./white-label/index.css": {
+      "style": "./white-label/index.css"
+    },
+    "./opentext-stage-1": {
+      "module": "./opentext-stage-1/index.esm.js",
+      "default": "./opentext-stage-1/index.cjs.js",
+      "import": "./opentext-stage-1/index.cjs.js",
+      "types": "./opentext-stage-1/index.d.ts",
+      "style": "./opentext-stage-1/index.css"
+    },
+    "./opentext-stage-1/index.css": {
+      "style": "./opentext-stage-1/index.css"
+    },
+    "./opentext-stage-1-dark": {
+      "module": "./opentext-stage-1-dark/index.esm.js",
+      "default": "./opentext-stage-1-dark/index.cjs.js",
+      "import": "./opentext-stage-1-dark/index.cjs.js",
+      "types": "./opentext-stage-1-dark/index.d.ts",
+      "style": "./opentext-stage-1-dark/index.css"
+    },
+    "./opentext-stage-1-dark/index.css": {
+      "style": "./opentext-stage-1-dark/index.css"
+    },
+    "./opentext": {
+      "module": "./opentext/index.esm.js",
+      "default": "./opentext/index.cjs.js",
+      "import": "./opentext/index.cjs.js",
+      "types": "./opentext/index.d.ts",
+      "style": "./opentext/index.css"
+    },
+    "./opentext/index.css": {
+      "style": "./opentext/index.css"
+    },
+    "./jato": {
+      "module": "./jato/index.esm.js",
+      "default": "./jato/index.cjs.js",
+      "import": "./jato/index.cjs.js",
+      "types": "./jato/index.d.ts",
+      "style": "./jato/index.css"
+    },
+    "./jato/index.css": {
+      "style": "./jato/index.css"
+    }
+  }
+}

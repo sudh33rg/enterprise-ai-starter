@@ -1,0 +1,591 @@
+{
+  "name": "@ux-aspects-universal/react",
+  "version": "8.2.0",
+  "license": "UNLICENSED",
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "@ux-aspects-universal/core": "8.2.0"
+  },
+  "peerDependencies": {
+    "@floating-ui/react": "^0.26.0",
+    "@react-aria/focus": ">=3.0.0 <4.0.0",
+    "@react-aria/interactions": ">=3.0.0 <4.0.0",
+    "@react-aria/utils": ">=3.0.0 <4.0.0",
+    "@react-aria/live-announcer": ">=3.0.0 <4.0.0",
+    "@react-aria/dialog": ">=3.0.0 <4.0.0",
+    "@react-aria/overlays": ">=3.0.0 <4.0.0",
+    "@react-types/dialog": ">=3.0.0 <4.0.0",
+    "@react-types/overlays": ">=3.0.0 <4.0.0",
+    "@react-aria/radio": ">=3.0.0 <4.0.0",
+    "@react-aria/ssr": ">=3.0.0 <4.0.0",
+    "@react-stately/radio": ">=3.0.0 <4.0.0",
+    "@react-types/radio": ">=3.0.0 <4.0.0",
+    "styled-components": ">=5.0.0",
+    "@react-aria/switch": ">=3.0.0 <4.0.0",
+    "@react-stately/toggle": ">=3.0.0 <4.0.0",
+    "@react-types/checkbox": ">=3.0.0 <4.0.0",
+    "@ux-aspects-universal/themes": "8.2.0",
+    "clsx": ">=1.0.0",
+    "react": ">=16.8.0 <20.0.0",
+    "prop-types": ">=15.0.0",
+    "react-dom": ">=16.8.0 <20.0.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./index.esm.js",
+      "types": "./src/index.d.ts"
+    },
+    "./a11y": {
+      "import": "./a11y.esm.js",
+      "types": "./a11y/src/index.d.ts"
+    },
+    "./accordion": {
+      "import": "./accordion.esm.js",
+      "types": "./accordion/src/index.d.ts"
+    },
+    "./alert": {
+      "import": "./alert.esm.js",
+      "types": "./alert/src/index.d.ts"
+    },
+    "./app-layout": {
+      "import": "./app-layout.esm.js",
+      "types": "./app-layout/src/index.d.ts"
+    },
+    "./breadcrumbs": {
+      "import": "./breadcrumbs.esm.js",
+      "types": "./breadcrumbs/src/index.d.ts"
+    },
+    "./button": {
+      "import": "./button.esm.js",
+      "types": "./button/src/index.d.ts"
+    },
+    "./checkbox": {
+      "import": "./checkbox.esm.js",
+      "types": "./checkbox/src/index.d.ts"
+    },
+    "./chip": {
+      "import": "./chip.esm.js",
+      "types": "./chip/src/index.d.ts"
+    },
+    "./common": {
+      "import": "./common.esm.js",
+      "types": "./common/src/index.d.ts"
+    },
+    "./date-picker": {
+      "import": "./date-picker.esm.js",
+      "types": "./date-picker/src/index.d.ts"
+    },
+    "./date-time": {
+      "import": "./date-time.esm.js",
+      "types": "./date-time/src/index.d.ts"
+    },
+    "./dialog": {
+      "import": "./dialog.esm.js",
+      "types": "./dialog/src/index.d.ts"
+    },
+    "./drawer": {
+      "import": "./drawer.esm.js",
+      "types": "./drawer/src/index.d.ts"
+    },
+    "./form": {
+      "import": "./form.esm.js",
+      "types": "./form/src/index.d.ts"
+    },
+    "./i18n": {
+      "import": "./i18n.esm.js",
+      "types": "./i18n/src/index.d.ts"
+    },
+    "./icon": {
+      "import": "./icon.esm.js",
+      "types": "./icon/src/index.d.ts"
+    },
+    "./input-group": {
+      "import": "./input-group.esm.js",
+      "types": "./input-group/src/index.d.ts"
+    },
+    "./keycodes": {
+      "import": "./keycodes.esm.js",
+      "types": "./keycodes/src/index.d.ts"
+    },
+    "./loader": {
+      "import": "./loader.esm.js",
+      "types": "./loader/src/index.d.ts"
+    },
+    "./logo": {
+      "import": "./logo.esm.js",
+      "types": "./logo/src/index.d.ts"
+    },
+    "./login": {
+      "import": "./login.esm.js",
+      "types": "./login/src/index.d.ts"
+    },
+    "./masthead": {
+      "import": "./masthead.esm.js",
+      "types": "./masthead/src/index.d.ts"
+    },
+    "./menu": {
+      "import": "./menu.esm.js",
+      "types": "./menu/src/index.d.ts"
+    },
+    "./navigation": {
+      "import": "./navigation.esm.js",
+      "types": "./navigation/src/index.d.ts"
+    },
+    "./notification": {
+      "import": "./notification.esm.js",
+      "types": "./notification/src/index.d.ts"
+    },
+    "./number-picker": {
+      "import": "./number-picker.esm.js",
+      "types": "./number-picker/src/index.d.ts"
+    },
+    "./panel": {
+      "import": "./panel.esm.js",
+      "types": "./panel/src/index.d.ts"
+    },
+    "./popover": {
+      "import": "./popover.esm.js",
+      "types": "./popover/src/index.d.ts"
+    },
+    "./progress-bar": {
+      "import": "./progress-bar.esm.js",
+      "types": "./progress-bar/src/index.d.ts"
+    },
+    "./radio-button": {
+      "import": "./radio-button.esm.js",
+      "types": "./radio-button/src/index.d.ts"
+    },
+    "./select": {
+      "import": "./select.esm.js",
+      "types": "./select/src/index.d.ts"
+    },
+    "./slider": {
+      "import": "./slider.esm.js",
+      "types": "./slider/src/index.d.ts"
+    },
+    "./spinner": {
+      "import": "./spinner.esm.js",
+      "types": "./spinner/src/index.d.ts"
+    },
+    "./selection": {
+      "import": "./selection.esm.js",
+      "types": "./selection/src/index.d.ts"
+    },
+    "./styled-components": {
+      "import": "./styled-components.esm.js",
+      "types": "./styled-components/src/index.d.ts"
+    },
+    "./table": {
+      "import": "./table.esm.js",
+      "types": "./table/src/index.d.ts"
+    },
+    "./tabs": {
+      "import": "./tabs.esm.js",
+      "types": "./tabs/src/index.d.ts"
+    },
+    "./text-input": {
+      "import": "./text-input.esm.js",
+      "types": "./text-input/src/index.d.ts"
+    },
+    "./theming": {
+      "import": "./theming.esm.js",
+      "types": "./theming/src/index.d.ts"
+    },
+    "./time-picker": {
+      "import": "./time-picker.esm.js",
+      "types": "./time-picker/src/index.d.ts"
+    },
+    "./tree": {
+      "import": "./tree.esm.js",
+      "types": "./tree/src/index.d.ts"
+    },
+    "./toggle-switch": {
+      "import": "./toggle-switch.esm.js",
+      "types": "./toggle-switch/src/index.d.ts"
+    },
+    "./toolbar": {
+      "import": "./toolbar.esm.js",
+      "types": "./toolbar/src/index.d.ts"
+    },
+    "./typography": {
+      "import": "./typography.esm.js",
+      "types": "./typography/src/index.d.ts"
+    },
+    "./utils": {
+      "import": "./utils.esm.js",
+      "types": "./utils/src/index.d.ts"
+    },
+    "./validation": {
+      "import": "./validation.esm.js",
+      "types": "./validation/src/index.d.ts"
+    },
+    "./wizard": {
+      "import": "./wizard.esm.js",
+      "types": "./wizard/src/index.d.ts"
+    },
+    "./pagination": {
+      "import": "./pagination.esm.js",
+      "types": "./pagination/src/index.d.ts"
+    },
+    "./inline-notification": {
+      "import": "./inline-notification.esm.js",
+      "types": "./inline-notification/src/index.d.ts"
+    },
+    "./card": {
+      "import": "./card.esm.js",
+      "types": "./card/src/index.d.ts"
+    },
+    "./avatar": {
+      "import": "./avatar.esm.js",
+      "types": "./avatar/src/index.d.ts"
+    },
+    "./inline-edit": {
+      "import": "./inline-edit.esm.js",
+      "types": "./inline-edit/src/index.d.ts"
+    },
+    "./page-tabs": {
+      "import": "./page-tabs.esm.js",
+      "types": "./page-tabs/src/index.d.ts"
+    },
+    "./icon/jato": {
+      "import": "./jato-icons.esm.js",
+      "types": "./icon/jato/src/index.d.ts"
+    },
+    "./icon/jato-status": {
+      "import": "./jato-status-icons.esm.js",
+      "types": "./icon/jato-status/src/index.d.ts"
+    },
+    "./icon/jato-mime": {
+      "import": "./jato-mime-icons.esm.js",
+      "types": "./icon/jato-mime/src/index.d.ts"
+    },
+    "./icon/jato-illustration": {
+      "import": "./jato-illustration-icons.esm.js",
+      "types": "./icon/jato-illustration/src/index.d.ts"
+    },
+    "./icon/jato-emoticon": {
+      "import": "./jato-emoticon-icons.esm.js",
+      "types": "./icon/jato-emoticon/src/index.d.ts"
+    },
+    "./icon/micro-focus": {
+      "import": "./micro-focus-icons.esm.js",
+      "types": "./icon/micro-focus/src/index.d.ts"
+    },
+    "./icon/ux-aspects": {
+      "import": "./ux-aspects-icons.esm.js",
+      "types": "./icon/ux-aspects/src/index.d.ts"
+    },
+    "./styled-components/micro-focus": {
+      "import": "./micro-focus-styled-components.esm.js",
+      "types": "./styled-components/micro-focus/src/index.d.ts"
+    },
+    "./styled-components/micro-focus-dark": {
+      "import": "./micro-focus-dark-styled-components.esm.js",
+      "types": "./styled-components/micro-focus-dark/src/index.d.ts"
+    },
+    "./styled-components/opentext-stage-1": {
+      "import": "./opentext-stage-1-styled-components.esm.js",
+      "types": "./styled-components/opentext-stage-1/src/index.d.ts"
+    },
+    "./styled-components/opentext-stage-1-dark": {
+      "import": "./opentext-stage-1-dark-styled-components.esm.js",
+      "types": "./styled-components/opentext-stage-1-dark/src/index.d.ts"
+    },
+    "./styled-components/white-label": {
+      "import": "./white-label-styled-components.esm.js",
+      "types": "./styled-components/white-label/src/index.d.ts"
+    },
+    "./styled-components/opentext": {
+      "import": "./opentext-styled-components.esm.js",
+      "types": "./styled-components/opentext/src/index.d.ts"
+    },
+    "./styled-components/jato-light": {
+      "import": "./jato-light-styled-components.esm.js",
+      "types": "./styled-components/jato-light/src/index.d.ts"
+    },
+    "./styled-components/jato-dark": {
+      "import": "./jato-dark-styled-components.esm.js",
+      "types": "./styled-components/jato-dark/src/index.d.ts"
+    },
+    "./encapsulated": {
+      "import": "./encapsulated/index.esm.js",
+      "types": "./encapsulated/src/index.d.ts"
+    },
+    "./encapsulated/a11y": {
+      "import": "./encapsulated/a11y.esm.js",
+      "types": "./encapsulated/a11y/src/index.d.ts"
+    },
+    "./encapsulated/accordion": {
+      "import": "./encapsulated/accordion.esm.js",
+      "types": "./encapsulated/accordion/src/index.d.ts"
+    },
+    "./encapsulated/alert": {
+      "import": "./encapsulated/alert.esm.js",
+      "types": "./encapsulated/alert/src/index.d.ts"
+    },
+    "./encapsulated/app-layout": {
+      "import": "./encapsulated/app-layout.esm.js",
+      "types": "./encapsulated/app-layout/src/index.d.ts"
+    },
+    "./encapsulated/breadcrumbs": {
+      "import": "./encapsulated/breadcrumbs.esm.js",
+      "types": "./encapsulated/breadcrumbs/src/index.d.ts"
+    },
+    "./encapsulated/button": {
+      "import": "./encapsulated/button.esm.js",
+      "types": "./encapsulated/button/src/index.d.ts"
+    },
+    "./encapsulated/checkbox": {
+      "import": "./encapsulated/checkbox.esm.js",
+      "types": "./encapsulated/checkbox/src/index.d.ts"
+    },
+    "./encapsulated/chip": {
+      "import": "./encapsulated/chip.esm.js",
+      "types": "./encapsulated/chip/src/index.d.ts"
+    },
+    "./encapsulated/common": {
+      "import": "./encapsulated/common.esm.js",
+      "types": "./encapsulated/common/src/index.d.ts"
+    },
+    "./encapsulated/date-picker": {
+      "import": "./encapsulated/date-picker.esm.js",
+      "types": "./encapsulated/date-picker/src/index.d.ts"
+    },
+    "./encapsulated/date-time": {
+      "import": "./encapsulated/date-time.esm.js",
+      "types": "./encapsulated/date-time/src/index.d.ts"
+    },
+    "./encapsulated/dialog": {
+      "import": "./encapsulated/dialog.esm.js",
+      "types": "./encapsulated/dialog/src/index.d.ts"
+    },
+    "./encapsulated/drawer": {
+      "import": "./encapsulated/drawer.esm.js",
+      "types": "./encapsulated/drawer/src/index.d.ts"
+    },
+    "./encapsulated/form": {
+      "import": "./encapsulated/form.esm.js",
+      "types": "./encapsulated/form/src/index.d.ts"
+    },
+    "./encapsulated/i18n": {
+      "import": "./encapsulated/i18n.esm.js",
+      "types": "./encapsulated/i18n/src/index.d.ts"
+    },
+    "./encapsulated/icon": {
+      "import": "./encapsulated/icon.esm.js",
+      "types": "./encapsulated/icon/src/index.d.ts"
+    },
+    "./encapsulated/input-group": {
+      "import": "./encapsulated/input-group.esm.js",
+      "types": "./encapsulated/input-group/src/index.d.ts"
+    },
+    "./encapsulated/keycodes": {
+      "import": "./encapsulated/keycodes.esm.js",
+      "types": "./encapsulated/keycodes/src/index.d.ts"
+    },
+    "./encapsulated/loader": {
+      "import": "./encapsulated/loader.esm.js",
+      "types": "./encapsulated/loader/src/index.d.ts"
+    },
+    "./encapsulated/logo": {
+      "import": "./encapsulated/logo.esm.js",
+      "types": "./encapsulated/logo/src/index.d.ts"
+    },
+    "./encapsulated/login": {
+      "import": "./encapsulated/login.esm.js",
+      "types": "./encapsulated/login/src/index.d.ts"
+    },
+    "./encapsulated/masthead": {
+      "import": "./encapsulated/masthead.esm.js",
+      "types": "./encapsulated/masthead/src/index.d.ts"
+    },
+    "./encapsulated/menu": {
+      "import": "./encapsulated/menu.esm.js",
+      "types": "./encapsulated/menu/src/index.d.ts"
+    },
+    "./encapsulated/navigation": {
+      "import": "./encapsulated/navigation.esm.js",
+      "types": "./encapsulated/navigation/src/index.d.ts"
+    },
+    "./encapsulated/notification": {
+      "import": "./encapsulated/notification.esm.js",
+      "types": "./encapsulated/notification/src/index.d.ts"
+    },
+    "./encapsulated/number-picker": {
+      "import": "./encapsulated/number-picker.esm.js",
+      "types": "./encapsulated/number-picker/src/index.d.ts"
+    },
+    "./encapsulated/panel": {
+      "import": "./encapsulated/panel.esm.js",
+      "types": "./encapsulated/panel/src/index.d.ts"
+    },
+    "./encapsulated/popover": {
+      "import": "./encapsulated/popover.esm.js",
+      "types": "./encapsulated/popover/src/index.d.ts"
+    },
+    "./encapsulated/progress-bar": {
+      "import": "./encapsulated/progress-bar.esm.js",
+      "types": "./encapsulated/progress-bar/src/index.d.ts"
+    },
+    "./encapsulated/radio-button": {
+      "import": "./encapsulated/radio-button.esm.js",
+      "types": "./encapsulated/radio-button/src/index.d.ts"
+    },
+    "./encapsulated/select": {
+      "import": "./encapsulated/select.esm.js",
+      "types": "./encapsulated/select/src/index.d.ts"
+    },
+    "./encapsulated/slider": {
+      "import": "./encapsulated/slider.esm.js",
+      "types": "./encapsulated/slider/src/index.d.ts"
+    },
+    "./encapsulated/spinner": {
+      "import": "./encapsulated/spinner.esm.js",
+      "types": "./encapsulated/spinner/src/index.d.ts"
+    },
+    "./encapsulated/selection": {
+      "import": "./encapsulated/selection.esm.js",
+      "types": "./encapsulated/selection/src/index.d.ts"
+    },
+    "./encapsulated/styled-components": {
+      "import": "./encapsulated/styled-components.esm.js",
+      "types": "./encapsulated/styled-components/src/index.d.ts"
+    },
+    "./encapsulated/table": {
+      "import": "./encapsulated/table.esm.js",
+      "types": "./encapsulated/table/src/index.d.ts"
+    },
+    "./encapsulated/tabs": {
+      "import": "./encapsulated/tabs.esm.js",
+      "types": "./encapsulated/tabs/src/index.d.ts"
+    },
+    "./encapsulated/text-input": {
+      "import": "./encapsulated/text-input.esm.js",
+      "types": "./encapsulated/text-input/src/index.d.ts"
+    },
+    "./encapsulated/theming": {
+      "import": "./encapsulated/theming.esm.js",
+      "types": "./encapsulated/theming/src/index.d.ts"
+    },
+    "./encapsulated/time-picker": {
+      "import": "./encapsulated/time-picker.esm.js",
+      "types": "./encapsulated/time-picker/src/index.d.ts"
+    },
+    "./encapsulated/tree": {
+      "import": "./encapsulated/tree.esm.js",
+      "types": "./encapsulated/tree/src/index.d.ts"
+    },
+    "./encapsulated/toggle-switch": {
+      "import": "./encapsulated/toggle-switch.esm.js",
+      "types": "./encapsulated/toggle-switch/src/index.d.ts"
+    },
+    "./encapsulated/toolbar": {
+      "import": "./encapsulated/toolbar.esm.js",
+      "types": "./encapsulated/toolbar/src/index.d.ts"
+    },
+    "./encapsulated/typography": {
+      "import": "./encapsulated/typography.esm.js",
+      "types": "./encapsulated/typography/src/index.d.ts"
+    },
+    "./encapsulated/utils": {
+      "import": "./encapsulated/utils.esm.js",
+      "types": "./encapsulated/utils/src/index.d.ts"
+    },
+    "./encapsulated/validation": {
+      "import": "./encapsulated/validation.esm.js",
+      "types": "./encapsulated/validation/src/index.d.ts"
+    },
+    "./encapsulated/wizard": {
+      "import": "./encapsulated/wizard.esm.js",
+      "types": "./encapsulated/wizard/src/index.d.ts"
+    },
+    "./encapsulated/pagination": {
+      "import": "./encapsulated/pagination.esm.js",
+      "types": "./encapsulated/pagination/src/index.d.ts"
+    },
+    "./encapsulated/inline-notification": {
+      "import": "./encapsulated/inline-notification.esm.js",
+      "types": "./encapsulated/inline-notification/src/index.d.ts"
+    },
+    "./encapsulated/card": {
+      "import": "./encapsulated/card.esm.js",
+      "types": "./encapsulated/card/src/index.d.ts"
+    },
+    "./encapsulated/avatar": {
+      "import": "./encapsulated/avatar.esm.js",
+      "types": "./encapsulated/avatar/src/index.d.ts"
+    },
+    "./encapsulated/inline-edit": {
+      "import": "./encapsulated/inline-edit.esm.js",
+      "types": "./encapsulated/inline-edit/src/index.d.ts"
+    },
+    "./encapsulated/page-tabs": {
+      "import": "./encapsulated/page-tabs.esm.js",
+      "types": "./encapsulated/page-tabs/src/index.d.ts"
+    },
+    "./encapsulated/icon/jato": {
+      "import": "./encapsulated/jato-icons.esm.js",
+      "types": "./encapsulated/icon/jato/src/index.d.ts"
+    },
+    "./encapsulated/icon/jato-status": {
+      "import": "./encapsulated/jato-status-icons.esm.js",
+      "types": "./encapsulated/icon/jato-status/src/index.d.ts"
+    },
+    "./encapsulated/icon/jato-mime": {
+      "import": "./encapsulated/jato-mime-icons.esm.js",
+      "types": "./encapsulated/icon/jato-mime/src/index.d.ts"
+    },
+    "./encapsulated/icon/jato-illustration": {
+      "import": "./encapsulated/jato-illustration-icons.esm.js",
+      "types": "./encapsulated/icon/jato-illustration/src/index.d.ts"
+    },
+    "./encapsulated/icon/jato-emoticon": {
+      "import": "./encapsulated/jato-emoticon-icons.esm.js",
+      "types": "./encapsulated/icon/jato-emoticon/src/index.d.ts"
+    },
+    "./encapsulated/icon/micro-focus": {
+      "import": "./encapsulated/micro-focus-icons.esm.js",
+      "types": "./encapsulated/icon/micro-focus/src/index.d.ts"
+    },
+    "./encapsulated/icon/ux-aspects": {
+      "import": "./encapsulated/ux-aspects-icons.esm.js",
+      "types": "./encapsulated/icon/ux-aspects/src/index.d.ts"
+    },
+    "./encapsulated/styled-components/micro-focus": {
+      "import": "./encapsulated/micro-focus-styled-components.esm.js",
+      "types": "./encapsulated/styled-components/micro-focus/src/index.d.ts"
+    },
+    "./encapsulated/styled-components/micro-focus-dark": {
+      "import": "./encapsulated/micro-focus-dark-styled-components.esm.js",
+      "types": "./encapsulated/styled-components/micro-focus-dark/src/index.d.ts"
+    },
+    "./encapsulated/styled-components/opentext-stage-1": {
+      "import": "./encapsulated/opentext-stage-1-styled-components.esm.js",
+      "types": "./encapsulated/styled-components/opentext-stage-1/src/index.d.ts"
+    },
+    "./encapsulated/styled-components/opentext-stage-1-dark": {
+      "import": "./encapsulated/opentext-stage-1-dark-styled-components.esm.js",
+      "types": "./encapsulated/styled-components/opentext-stage-1-dark/src/index.d.ts"
+    },
+    "./encapsulated/styled-components/white-label": {
+      "import": "./encapsulated/white-label-styled-components.esm.js",
+      "types": "./encapsulated/styled-components/white-label/src/index.d.ts"
+    },
+    "./encapsulated/styled-components/opentext": {
+      "import": "./encapsulated/opentext-styled-components.esm.js",
+      "types": "./encapsulated/styled-components/opentext/src/index.d.ts"
+    },
+    "./encapsulated/styled-components/jato-light": {
+      "import": "./encapsulated/jato-light-styled-components.esm.js",
+      "types": "./encapsulated/styled-components/jato-light/src/index.d.ts"
+    },
+    "./encapsulated/styled-components/jato-dark": {
+      "import": "./encapsulated/jato-dark-styled-components.esm.js",
+      "types": "./encapsulated/styled-components/jato-dark/src/index.d.ts"
+    }
+  },
+  "module": "./index.esm.js",
+  "type": "module",
+  "main": "./index.esm.js"
+}

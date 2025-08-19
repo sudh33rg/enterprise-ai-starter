@@ -1,0 +1,43 @@
+import { UxaDateTimeAdapter, UxaDateTimeProperties, UxaDuration, UxaMonthInfo } from '../../../date-time/src/index.ts';
+import { Moment } from 'moment';
+export declare class UxaMomentDateTimeAdapter extends UxaDateTimeAdapter<Moment> {
+    getYear(dt: Moment): number;
+    getMonth(dt: Moment): number;
+    getMonthIndex(dt: Moment): number;
+    getDate(dt: Moment): number;
+    getHour(dt: Moment): number;
+    getMinute(dt: Moment): number;
+    getSecond(dt: Moment): number;
+    getMillisecond(dt: Moment): number;
+    getWeekDay(dt: Moment): number;
+    getOffset(dt: Moment): number;
+    getOffsetName(dt: Moment): string;
+    isSameYear(dt1: Moment, dt2: Moment): boolean;
+    isSameMonth(dt1: Moment, dt2: Moment): boolean;
+    isSameDate(dt1: Moment, dt2: Moment): boolean;
+    isSameHour(dt1: Moment, dt2: Moment): boolean;
+    isSameMinute(dt1: Moment, dt2: Moment): boolean;
+    isSameSecond(dt1: Moment, dt2: Moment): boolean;
+    getIntervalInDays(dt1: Moment, dt2: Moment): number;
+    create(year: number, month: number, date: number, hour?: number, minute?: number, second?: number, millisecond?: number): Moment;
+    now(): Moment;
+    clone(dt: Moment): Moment;
+    set(dt: Moment, values: UxaDateTimeProperties): Moment;
+    add(dt: Moment, duration: UxaDuration): Moment;
+    subtract(dt: Moment, duration: UxaDuration): Moment;
+    compare(dt1: Moment, dt2: Moment): 0 | 1 | -1;
+    parse(value: string, format?: string): Moment;
+    format(dt: Moment, format?: string): string;
+    getDateString(dt: Moment): string;
+    getTimeString(dt: Moment, _options?: {
+        hour12: boolean;
+    }): string;
+    getMonthNames(dt?: Moment): string[];
+    getMonthShortNames(dt?: Moment): string[];
+    getMonths(dt?: Moment): UxaMonthInfo[];
+    getWeekDayNames(dt?: Moment): string[];
+    getWeekDayShortNames(dt?: Moment): string[];
+    getWeekDayNarrowNames(dt?: Moment): string[];
+    getMeridiemNames(dt?: Moment): string[];
+    setDefaultLocale(locale: string): void;
+}
